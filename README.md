@@ -1,2 +1,2 @@
 # framer-motion
-react framer motion tutorial
+a simple to do app built using react .js 
