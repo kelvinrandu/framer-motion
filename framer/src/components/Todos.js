@@ -1,9 +1,11 @@
 import React from "react";
 import {
   HStack,
+  Text,
   IconButton,
   VStack,
   StackDivider,
+  Checkbox,
   Spacer,
   Badge,
 } from "@chakra-ui/react";
@@ -31,7 +33,9 @@ function Todos({ todos, deleteTodo }) {
     >
       {todos.map((todo) => (
         <HStack>
-          <ul>{todo.name}</ul>
+          <Checkbox size="sm" colorScheme="pink"/>
+
+          <Text>{todo.name}</Text>
           <Spacer />
           <IconButton
             icon={<FaTrash />}
