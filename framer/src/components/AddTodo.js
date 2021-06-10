@@ -24,8 +24,8 @@ function AddTodo({addTodo}) {
           name: content
       }
       addTodo(todo);
-      console.log(todo);
-
+      setContent('');
+     
 
   }
   return (
