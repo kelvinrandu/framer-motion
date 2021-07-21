@@ -53,15 +53,15 @@ function App() {
           >
             Todos extraordinaire
           </Heading>
+          <motion.div
+            initial={{ x: "-100vw" }}
+            animate={{ x: 0 }}
+            transition={{ delay: 0.5 }}
+          >
+            <AddTodo addTodo={addTodo} />
+          </motion.div>
         </motion.div>
         <Todos todos={todos} deleteTodo={deleteTodo} />
-        <motion.div
-          initial={{ x: "-100vw" }}
-          animate={{ x: 0 }}
-          transition={{ delay: 0.5 }}
-        >
-          <AddTodo addTodo={addTodo} />
-        </motion.div>
       </VStack>
     </>
   );
